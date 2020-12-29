@@ -1,0 +1,51 @@
+<!--miniprogram/pages/bundle_detail/bundle_detail.wxml-->
+<view class="header">
+  <text>单捆信息</text>
+</view>
+
+<view class="form">
+  <van-cell-group>
+    <van-field
+    model:value="{{log }}"
+      label="树号"
+      input-align="right"
+      bind:change="onChange"
+    />
+    <van-field
+    model:value="{{ bundle }}"
+      label="捆号"
+      input-align="right"
+      bind:change="onChange"
+    />
+    <van-field
+    model:value="{{ pcs }}"
+      label="张数"
+      input-align="right"
+      bind:change="onChange"
+    />
+    <van-field
+    model:value="{{ length }}"
+      label="长度"
+      input-align="right"
+      bind:change="onChange"
+    />
+    <van-field
+    model:value="{{ width }}"
+      label="宽度"
+      input-align="right"
+      bind:change="onChange"
+    />
+    <van-field
+      model:value="{{ qty }}"
+      label="面积"
+      input-align="right"
+      bind:change=""
+    />   
+  </van-cell-group>
+</view>
+
+
+
+<view class="btn">
+  <van-button  bindtap="save"  type="primary" size="large" >保存</van-button>
+</view>

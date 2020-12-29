@@ -1,0 +1,65 @@
+
+
+<!-- 标题 -->
+<van-sticky>
+  <view class="title">
+      <text>包装列表</text>
+      <van-icon name="add-o" size="40rpx" bindtap="add_new_pallet"/>
+  </view>
+</van-sticky>   
+<!-- 包装列表 -->
+<view class="tallysheet">
+  <scroll-view scroll-y style="height:100%" >
+    <block wx:for="{{pallet_list}}" wx:key="id" >
+        <view class="pallet_card" bindtap="actionSheetTap_pallet"  data-pallet="{{item}}" data-index="{{index}}">
+          <view class="info">
+            <view>包装号：{{item.nr}}</view>
+            <view>产品名称：{{item.name}}</view>
+            <view>数量：{{item.qty}}</view>          
+          </view>
+          <view>
+            <van-icon name="ellipsis" size="18px" />
+          </view>
+        </view>
+    </block>
+  </scroll-view>
+</view>
+
+<!-- 总计 -->
+<!-- <view class="footer">
+  <van-row>
+    <van-col span="12">{{total_count}}捆</van-col>
+    <van-col span="12" >{{total_qty}}平方</van-col>
+  </van-row>
+</view> -->
+
+<!-- 弹出操作菜单 -->
+<van-action-sheet
+  show="{{ acs_show }}"
+  actions="{{ acs_menu }}"
+	bind:close="acs_close"
+	bind:select="select_action"
+/>
+<!-- 弹出框 -->
+<van-dialog 
+id="van-dialog" />
+
+<!-- <view class="btn_scan">
+  <van-row>
+    <van-col span="12">
+      <van-button icon="scan"  bindtap="scan_add_bundle"  type="primary" size="large" >增加</van-button>
+    </van-col>
+    <van-col span="12" >
+      <van-button icon="scan"  bindtap="scan_del_bundle"  type="warning" size="large" >删除</van-button>
+    </van-col>
+  </van-row>
+</view> -->
+
+
+
+
+ 
+ 
+
+
+  

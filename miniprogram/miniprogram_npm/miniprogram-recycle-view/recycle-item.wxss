@@ -1,0 +1,7 @@
+/* components/recycle-item/recycle-item.wxss */
+:host {
+  display: flex;
+}
+.wx-recycle-item {
+  height: 100%;
+}

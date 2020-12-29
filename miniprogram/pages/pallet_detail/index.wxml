@@ -1,0 +1,26 @@
+<!--pages/pallet_detail/index.wxml-->
+<!--miniprogram/pages/bundle_detail/bundle_detail.wxml-->
+<view class="header">
+  <text>包装信息</text>
+</view>
+
+<view class="form">
+  <van-cell-group>
+    <van-field
+    model:value="{{nr}}"
+      label="包装编号"
+      input-align="right"
+    />
+    <van-field
+    model:value="{{name}}"
+      label="产品名称"
+      input-align="right"
+    />
+  </van-cell-group>
+</view>
+
+
+
+<view class="btn">
+  <van-button  bindtap="save"  type="primary" size="large" >保存</van-button>
+</view>

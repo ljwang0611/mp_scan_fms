@@ -1,0 +1,35 @@
+{
+
+  "cloud": true,
+  "pages": [
+    "pages/login/login",
+    "pages/pallet_list/index",
+    "pages/pallet_detail/index",
+    "pages/bundle_list/index",
+    "pages/bundle_detail/bundle_detail"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "蜂巢数据条码采集",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-image": "@vant/weapp/image/index"
+  }
+}

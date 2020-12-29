@@ -1,0 +1,99 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "miniprogram/cloud/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "/miniprogram/package.json",
+        "miniprogramNpmDistDir": "./miniprogram/"
+      }
+    ],
+    "minifyWXSS": true
+  },
+  "appid": "wxfaa51c3efddbd334",
+  "projectname": "mp_scan_fms",
+  "libVersion": "2.12.2",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "bundle_detail",
+          "pathName": "pages/bundle_detail/bundle_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pallet_list",
+          "pathName": "pages/pallet_list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pallet_detail",
+          "pathName": "pages/pallet_detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "bundle_list",
+          "pathName": "pages/bundle_list/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

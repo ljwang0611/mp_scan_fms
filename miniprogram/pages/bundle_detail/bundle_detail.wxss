@@ -1,0 +1,17 @@
+/* miniprogram/pages/bundle_detail/bundle_detail.wxss */
+.header{
+  text-align: center;
+  height: 30px;
+  font-weight: bolder;
+  padding: 20rpx;
+  /* border: red 1px solid; */
+}
+
+.btn{
+  padding: 25rpx;
+  margin-top: 20rpx;
+  /* border: red 1px solid; */
+}
+.btn .van-button{
+  border-radius: 15rpx;
+}

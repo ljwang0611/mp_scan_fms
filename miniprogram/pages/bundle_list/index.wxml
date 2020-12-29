@@ -1,0 +1,85 @@
+
+
+<van-sticky>
+  <view class="title">
+      <text>码单</text>
+      <van-icon name="apps-o" size="40rpx" bindtap="actionSheetTap_title"/>
+  </view>
+
+  <view class="total">
+    <view class="item">{{total_count}}捆</view>
+    <view class="item">{{total_qty}}平方</view>
+  </view>
+
+
+  <view class="header">
+      <view class="item">树号</view>
+      <view class="item">捆号</view>
+      <view class="item">张数</view>
+      <view class="item">长度</view>
+      <view class="item">宽度</view>
+      <view class="item">面积</view>
+  </view>
+
+
+</van-sticky>   
+
+
+
+  <recycle-view class="" batch="{{batchSetRecycleData}}" id="recycleId" batch-key="batchSetRecycleData" height="{{height}}" >
+      <recycle-item wx:for="{{recycleList}}" wx:key="__index__"  data-bundle="{{item}}" data-index="{{item.__index__}}" bindtap="actionSheetTap_bundle">
+        <view class="list">
+          <view class="item">
+            {{item.log}}
+          </view>
+          <view class="item">
+            {{item.bundle}}
+          </view>
+          <view class="item">
+            {{item.pcs}}
+          </view>
+          <view class="item">
+            {{item.length}}
+          </view>
+          <view class="item">
+            {{item.width}}
+          </view>
+          <view class="item">
+            {{item.qty}}
+          </view>
+        </view>  
+      </recycle-item>
+</recycle-view>
+
+
+<!-- 总计 -->
+<!-- <view class="footer">
+  <van-row>
+    <van-col span="12">{{total_count}}捆</van-col>
+    <van-col span="12" >{{total_qty}}平方</van-col>
+  </van-row>
+</view> -->
+
+<!-- 弹出框 -->
+<van-dialog 
+id="van-dialog" />
+
+<!-- 弹出操作菜单 -->
+<van-action-sheet
+  show="{{ acs_show }}"
+  actions="{{ acs_menu }}"
+	bind:close="acs_close"
+	bind:select="select_action"
+/>
+
+<view class="btn_scan">
+  <van-row>
+    <van-col span="12">
+      <van-button icon="scan"  bindtap="scan_add_bundle"  type="primary" size="large" >增加</van-button>
+    </van-col>
+    <van-col span="12" >
+      <van-button icon="scan"  bindtap="scan_del_bundle"  type="warning" size="large" >删除</van-button>
+    </van-col>
+  </van-row>
+</view>
+  

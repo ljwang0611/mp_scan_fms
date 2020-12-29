@@ -1,0 +1,20 @@
+<!--miniprogram/pages/login/login.wxml-->
+
+
+
+  <view class="header_logo">
+    <image src="cloud://scancode-6gp1h01lfb133811.7363-scancode-6gp1h01lfb133811-1304311407/images/logo.PNG" mode="widthFix"></image>
+    <!-- <text>hi ljwang</text> -->
+  </view>
+
+  <view class="title">
+    <text>欢迎</text>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="btn_action">
+    <van-button plain open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo" type="primary" size="large" wx:if="{{!authcode}}">微信登录</van-button>
+    <van-button bindtap="enter" type="primary" size="large" wx:if="{{authcode}}">开始使用</van-button>
+  </view>
+
+

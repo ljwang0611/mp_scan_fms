@@ -1,0 +1,77 @@
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  position: relative;
+  text-align: center;
+  height: 70rpx;
+  padding-top: 32rpx;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.title .van-icon{
+  position: absolute;
+  right: 20rpx;
+  bottom: 26rpx;
+}
+.header{
+  padding: 20rpx;
+  height: 35rpx;
+  background-color: rgb(233, 227, 227);
+}
+.header .van-row .van-col{
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.tallysheet{
+  margin-top: 0rpx;
+  height: 90%; 
+}
+.tallysheet .van-row{
+  padding-bottom: 15rpx;
+  /* padding-left: 15rpx;
+  padding-right: 15rpx; */
+}
+.tallysheet .van-col{
+  text-align: center;
+  font-size: 12px;
+}
+.footer{
+  margin-top: 15rpx;
+  padding: 15rpx;
+}
+.footer .van-col{
+  font-size: 14px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 25rpx;
+}
+.btn_scan  .van-col{
+  padding: 10rpx;
+}
+.btn_scan .van-button{
+  border-radius: 15rpx;
+}
+
+.pallet_card{
+  height: 12%;
+  background-color: rgb(218, 214, 214);
+  margin-bottom: 25rpx;
+  margin-right: 25rpx;
+  margin-left: 25rpx;
+  /* border: red solid 1px; */
+  /* padding-top: 3%; */
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  border-radius: 15rpx;
+  font-weight: bold;
+  font-size: 13px;
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

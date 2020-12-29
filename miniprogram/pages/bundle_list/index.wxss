@@ -1,0 +1,81 @@
+page{
+  position: relative;
+  height: 100%;
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  height: 70rpx;
+  padding-top: 30rpx;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.title .van-icon{
+  position: absolute;
+  right: 20rpx;
+  bottom: 26rpx;
+}
+.total{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.total .item{
+  width: 40%;
+  padding: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 25rpx;
+  background: rgb(211, 209, 209);
+  border-radius: 15rpx;
+  font-weight: bolder;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  height: 35rpx;
+  background-color: rgb(233, 227, 227);
+
+}
+.header .item{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.list{
+  /* padding-top: 25rpx; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 720rpx;
+} 
+.list .item{
+  margin-left: 20rpx;
+  padding-top: 30rpx;
+  font-size: 13px;
+
+}
+
+.footer{
+  margin-top: 15rpx;
+  padding: 15rpx;
+}
+.footer .van-col{
+  font-size: 14px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 25rpx;
+}
+.btn_scan  .van-col{
+  padding: 10rpx;
+}
+.btn_scan .van-button{
+  border-radius: 15rpx;
+}
